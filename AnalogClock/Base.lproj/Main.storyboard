@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnalogClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-Gy-4i4">
+                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="FF7-m5-tf2"/>
+                                    <constraint firstAttribute="width" constant="250" id="kFe-Va-oXj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7S-Fe-6us" customClass="UIImageView">
+                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="KNZ-H5-P1T"/>
+                                    <constraint firstAttribute="height" constant="250" id="cBG-3F-2NC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qK7-Cs-ebm" customClass="UIImageView">
+                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="r0y-ch-3o1"/>
+                                    <constraint firstAttribute="height" constant="250" id="uam-RI-15g"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCJ-FO-H2Z" customClass="UIImageView">
+                                <rect key="frame" x="62.666666666666657" y="281" width="249.99999999999997" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="d23-0I-dij"/>
+                                    <constraint firstAttribute="width" constant="250" id="dVk-Jm-VHj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="mt0-8U-3Lr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZw-Qs-8gN">
+                                <rect key="frame" x="20" y="551" width="335" height="207"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oZw-Qs-8gN" firstAttribute="top" secondItem="6EU-Gy-4i4" secondAttribute="bottom" constant="20" id="1kS-Ho-Nfv"/>
+                            <constraint firstItem="fCJ-FO-H2Z" firstAttribute="centerX" secondItem="qK7-Cs-ebm" secondAttribute="centerX" id="BGz-Ug-uzI"/>
+                            <constraint firstItem="6EU-Gy-4i4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C3M-TT-vy1"/>
+                            <constraint firstItem="h7S-Fe-6us" firstAttribute="centerY" secondItem="qK7-Cs-ebm" secondAttribute="centerY" id="F69-pH-eRs"/>
+                            <constraint firstItem="oZw-Qs-8gN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fh5-gz-ciq"/>
+                            <constraint firstItem="6EU-Gy-4i4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HM6-wK-c6F"/>
+                            <constraint firstItem="h7S-Fe-6us" firstAttribute="centerX" secondItem="qK7-Cs-ebm" secondAttribute="centerX" id="Klr-Fi-If8"/>
+                            <constraint firstItem="h7S-Fe-6us" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T3o-jf-oEN"/>
+                            <constraint firstItem="fCJ-FO-H2Z" firstAttribute="centerY" secondItem="qK7-Cs-ebm" secondAttribute="centerY" id="ZAD-xK-GSL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oZw-Qs-8gN" secondAttribute="trailing" constant="20" id="ijq-Fn-sWT"/>
+                            <constraint firstItem="h7S-Fe-6us" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nlH-Qg-Aqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oZw-Qs-8gN" secondAttribute="bottom" constant="20" id="wPI-Xk-BB4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clock" destination="6EU-Gy-4i4" id="pXG-E9-HgV"/>
+                        <outlet property="digitalTime" destination="oZw-Qs-8gN" id="Qml-1x-D8f"/>
+                        <outlet property="hours" destination="fCJ-FO-H2Z" id="oeX-6z-nUR"/>
+                        <outlet property="minutes" destination="qK7-Cs-ebm" id="fbH-Mr-0F7"/>
+                        <outlet property="seconds" destination="h7S-Fe-6us" id="hlD-h2-6uR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock" width="676" height="653"/>
+    </resources>
+</document>
